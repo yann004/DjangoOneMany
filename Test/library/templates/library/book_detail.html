@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Détails du Livre</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'library/styles.css' %}">
+</head>
+<body>
+    <h1>Détails du Livre</h1>
+    <p>Titre : {{ book.title }}</p>
+    <p>Nombre d'exemplaires : {{ book.nbre_exemplaire }}</p>
+    <p>Date de publication : {{ book.published_date }}</p>
+    <p>Auteur : {{ book.author.name }}</p>
+</body>
+</html>

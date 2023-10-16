@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Détails de l'Auteur</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'library/styles.css' %}">
+</head>
+<body>
+    <h1>Détails de l'Auteur</h1>
+    <p>Nom : {{ author.name }}</p>
+    <p>Âge : {{ author.age }}</p>
+    <p>Genre : {{ author.get_genre_display }}</p>
+    <p>Statut : {{ author.get_statut_display }}</p>
+    <p>Origine : {{ author.origine }}</p>
+    
+</body>
+</html>
